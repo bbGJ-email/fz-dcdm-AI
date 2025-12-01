@@ -1,0 +1,9 @@
+# Netlify 配置文件
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# 配置 Netlify Functions
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
